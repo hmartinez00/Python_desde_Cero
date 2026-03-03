@@ -1,0 +1,275 @@
+{
+  "course_title": "Python de Cero a Pro: Fundamentos y Proyectos Reales con Colab",
+  "course_overview": {
+    "description": "Curso introductorio a Python de propósito general, diseñado para principiantes y público amplio (instituciones, empresas, hobbyists). Enfocado en conceptos básicos con progresión a temas intermedios, usando Jupyter Notebooks en Google Colab para interactividad sin setup local. Incluye retos progresivos encadenados para medir avance y fomentar retención. Alineado con cursos top de Udemy (e.g., 100 Days of Code) y Coursera (e.g., Python for Everybody), con énfasis en proyectos reales y mejores prácticas modernas (Python 3.12+).",
+    "objectives": [
+      "Dominar sintaxis básica y estructuras de datos.",
+      "Aplicar lógica de programación y funciones.",
+      "Manejar archivos, excepciones y OOP.",
+      "Usar librerías esenciales y herramientas como Git.",
+      "Construir portafolio con proyectos integradores.",
+      "Preparar para ramificaciones (data science, web dev, IA) basado en recepción."
+    ],
+    "target_audience": "Principantes absolutos, profesionales cambiando carrera, estudiantes, empresas para capacitación interna.",
+    "prerequisites": "Ninguno; solo acceso a internet y cuenta Google.",
+    "duration_estimate": "40-60 horas, autodirigido (módulos flexibles).",
+    "platform": "Udemy o similar, con notebooks en Colab y GitHub para recursos.",
+    "pricing_suggestion": "$10-20 con descuentos para volumen.",
+    "tools_and_resources": [
+      "Google Colab para notebooks interactivos.",
+      "Recursos gratuitos: Python.org, freeCodeCamp, Automate the Boring Stuff.",
+      "Opcionales pagos: Udemy previews, libros como Python Crash Course."
+    ]
+  },
+  "course_structure": {
+    "type": "Modular (no semanal, autodirigido).",
+    "modules": [
+      {
+        "module_id": 1,
+        "title": "Fundamentos Básicos",
+        "topics": [
+          "Instalación via Colab (sin setup local).",
+          "Hola mundo, variables, tipos de datos (int, float, str, bool).",
+          "Operadores matemáticos, input/output, strings (manipulación, f-strings)."
+        ],
+        "resources": [
+          "Documentación oficial de Python.",
+          "freeCodeCamp YouTube (videos básicos en español).",
+          "Colab notebooks de ejemplo."
+        ],
+        "exercises": [
+          "Calculadora simple.",
+          "Generador de nombres."
+        ],
+        "project": "Tip Calculator (calcula propina basada en input).",
+        "challenges": {
+          "description": "Retos progresivos: Crea variables y opera con ellas, almacenando resultados en variables para retos posteriores (e.g., variable 'total' alimenta condicional).",
+          "mitigations": ["Hints en celdas colapsadas.", "Asserts suaves para feedback.", "Reset variables opcional."]
+        },
+        "estimated_time": "5 horas."
+      },
+      {
+        "module_id": 2,
+        "title": "Control de Flujo y Lógica",
+        "topics": [
+          "If/else/elif, operadores lógicos (and/or/not).",
+          "Loops (for/while), range(), condicionales anidados."
+        ],
+        "resources": [
+          "Automate the Boring Stuff (capítulos 1-3, gratis).",
+          "Coursera 'Python for Everybody' (módulo 1 gratuito)."
+        ],
+        "exercises": [
+          "FizzBuzz.",
+          "Validación de edad."
+        ],
+        "project": "Aventura de texto (decisiones basadas en inputs).",
+        "challenges": {
+          "description": "Retos encadenados: Usa loops para procesar listas de retos previos, midiendo avance con outputs que 'desbloquean' secciones.",
+          "mitigations": ["Pistas integradas.", "Fallbacks para variables no definidas."]
+        },
+        "estimated_time": "6 horas."
+      },
+      {
+        "module_id": 3,
+        "title": "Estructuras de Datos Básicas",
+        "topics": [
+          "Listas (indexing, slicing, métodos como append/sort).",
+          "Tuplas, sets, diccionarios (keys/values, nesting)."
+        ],
+        "resources": [
+          "Real Python tutorials (gratuitos).",
+          "Udemy previews de cursos similares."
+        ],
+        "exercises": [
+          "Lista de compras.",
+          "Diccionario de contactos."
+        ],
+        "project": "Generador de contraseñas (usa listas y random).",
+        "challenges": {
+          "description": "Almacena estructuras en variables para usar en comprehensions o bucles posteriores.",
+          "mitigations": ["Soluciones parciales en celdas opcionales."]
+        },
+        "estimated_time": "6 horas."
+      },
+      {
+        "module_id": 4,
+        "title": "Funciones y Modularidad",
+        "topics": [
+          "Definir funciones, parámetros (posicionales/keywords).",
+          "Return, scope (global/local), *args/**kwargs, lambdas básicas."
+        ],
+        "resources": [
+          "Python Crash Course (capítulos gratuitos).",
+          "Google Colab examples."
+        ],
+        "exercises": [
+          "Función de conversión de unidades."
+        ],
+        "project": "Calculadora avanzada (con funciones para operaciones).",
+        "challenges": {
+          "description": "Funciones que toman outputs de retos previos como argumentos.",
+          "mitigations": ["Chequeos automáticos con try/except."]
+        },
+        "estimated_time": "5 horas."
+      },
+      {
+        "module_id": 5,
+        "title": "Manejo de Archivos y Excepciones",
+        "topics": [
+          "Leer/escribir archivos (open/with).",
+          "JSON/CSV basics, try/except/raise, debugging."
+        ],
+        "resources": [
+          "Automate the Boring Stuff (capítulos 8-9).",
+          "Stack Overflow para ejemplos."
+        ],
+        "exercises": [
+          "Leer un archivo de texto y contar palabras."
+        ],
+        "project": "Gestor de tareas (to-do list en archivo).",
+        "challenges": {
+          "description": "Archivos generados en retos previos se leen en posteriores.",
+          "mitigations": ["Feedback amigable en asserts."]
+        },
+        "estimated_time": "5 horas."
+      },
+      {
+        "module_id": 6,
+        "title": "Programación Orientada a Objetos (OOP)",
+        "topics": [
+          "Clases/objetos, atributos/métodos.",
+          "Herencia, polimorfismo, encapsulación básicas."
+        ],
+        "resources": [
+          "Coursera 'Python Data Structures' (módulo 2).",
+          "freeCodeCamp OOP tutorial."
+        ],
+        "exercises": [
+          "Clase 'Coche' con métodos."
+        ],
+        "project": "Juego simple (como Blackjack: usa clases para cartas/jugadores).",
+        "challenges": {
+          "description": "Objetos instanciados de clases previas se usan en métodos encadenados.",
+          "mitigations": ["Resets para reiniciar objetos."]
+        },
+        "estimated_time": "6 horas."
+      },
+      {
+        "module_id": 7,
+        "title": "Bibliotecas Esenciales y Mejores Prácticas",
+        "topics": [
+          "Módulos estándar (random, math, datetime).",
+          "Intro a librerías externas (requests para APIs, pandas basics).",
+          "Entornos virtuales (venv), Git basics."
+        ],
+        "resources": [
+          "Python.org libs, PyPI ejemplos.",
+          "GitHub tutorials."
+        ],
+        "exercises": [
+          "Fetch data de una API simple (como weather)."
+        ],
+        "project": "Scraper básico (extrae datos de web con requests/BeautifulSoup).",
+        "challenges": {
+          "description": "Datos fetchados se almacenan para análisis en retos siguientes.",
+          "mitigations": ["Opciones para datos dummy si API falla."]
+        },
+        "estimated_time": "6 horas."
+      },
+      {
+        "module_id": 8,
+        "title": "Proyectos Integradores y Avanzados",
+        "topics": [
+          "Combinar todo (OOP + libs + files).",
+          "Intro a temas modernos (async basics, decorators).",
+          "Testing (unittest)."
+        ],
+        "resources": [
+          "Kaggle datasets (gratuitos).",
+          "YouTube proyectos Python."
+        ],
+        "exercises": [
+          "Mini-apps como conversor de moneda via API."
+        ],
+        "project": "App personal (e.g., Blog simple con Flask o analizador de datos con Pandas).",
+        "challenges": {
+          "description": "Proyecto capstone encadenado de todos los módulos previos.",
+          "mitigations": ["Guías paso a paso con hints."]
+        },
+        "estimated_time": "7 horas."
+      },
+      {
+        "module_id": "bonus",
+        "title": "Módulos Opcionales/Ramificaciones (Basado en Recepción)",
+        "topics": [
+          "Data Science: Pandas/NumPy/Matplotlib.",
+          "Web Dev: Flask basics.",
+          "Automatización: Selenium.",
+          "IA Intro: Scikit-learn."
+        ],
+        "resources": [
+          "Kaggle, Flask docs."
+        ],
+        "exercises": [
+          "Análisis de datos CSV."
+        ],
+        "project": "Dependiendo de rama (e.g., Clasificador simple para IA).",
+        "challenges": {
+          "description": "Encadenados a módulos core, para upselling a cursos derivados.",
+          "mitigations": ["Independientes si se toman solos."]
+        },
+        "estimated_time": "Por módulo: 5-7 horas."
+      }
+    ]
+  },
+  "video_guidelines": {
+    "duration": "2-5 minutos por video (máx 3 min ideal para engagement).",
+    "format": "Screen recordings en Colab, con explicación verbal, animaciones y calls-to-action (e.g., 'Pausa y prueba').",
+    "content_style": "Mix: Creación de celdas from scratch (principal) + ejecución de pre-hechos para demos rápidas. Modelar pensamiento de programador.",
+    "per_lesson": "1-3 videos por concepto (e.g., uno por sub-tema como 'for-loop'). Subtítulos en español/inglés.",
+    "tools": "Grabar directamente en Colab con screen share, zoom en código."
+  },
+  "quiz_guidelines": {
+    "placement": "Al final de cada módulo (quizzes interactivos en Udemy o Google Forms).",
+    "types": "Múltiples choice, coding challenges (verificar outputs).",
+    "purpose": "Reforzar conceptos, medir comprensión antes de avanzar.",
+    "evaluation": "Autoevaluados o por pares, con certificado al final."
+  },
+  "challenges_system": {
+    "description": "Retos progresivos encadenados: Outputs de un reto (en variables) alimentan al siguiente, midiendo avance y 'desbloqueando' secciones.",
+    "implementation": "En notebooks Colab: Celdas con placeholders (# Tu código aquí), asserts para validación automática, prints para feedback.",
+    "mitigations": [
+      "Hints y soluciones colapsadas.",
+      "Asserts suaves (feedback no error fatal).",
+      "Resets variables.",
+      "Fallbacks (datos dummy).",
+      "Forms embebidos para autoevaluación."
+    ],
+    "benefits": "Gamificación, retención, conexión de conceptos."
+  },
+  "development_phases": [
+    {
+      "phase_id": 1,
+      "title": "Crear los Cuadernos",
+      "description": "Construir notebooks en Colab para cada módulo, integrando temas, ejercicios, proyectos y retos encadenados."
+    },
+    {
+      "phase_id": 2,
+      "title": "Definir Estructura para los Videos",
+      "description": "Outline detallado de videos por lección, con scripts y demos."
+    },
+    {
+      "phase_id": 3,
+      "title": "Elaborar los Quizzes",
+      "description": "Crear quizzes y evaluaciones para cada módulo."
+    }
+  ],
+  "additional_notes": {
+    "updates": "Revisar anualmente (e.g., Python 3.13+).",
+    "engagement": "Foros de discusión, lives Q&A mensuales.",
+    "monetization": "Upselling a ramificaciones basado en analytics (completion rate >50%).",
+    "comparison_with_existing": "Integra fortalezas del cuaderno anterior (data focus en bonus), agrega OOP, Git y diversidad de proyectos."
+  }
+}
+
