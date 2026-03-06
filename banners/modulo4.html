@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+  .module-banner {
+    background: linear-gradient(135deg, #0f0c29 0%, #1a1447 50%, #0a1f3a 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    max-width: 1000px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #e0e0ff;
+    position: relative;
+  }
+
+  .circuit-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 25%, rgba(0, 255, 255, 0.07) 0%, transparent 60%),
+                radial-gradient(circle at 85% 75%, rgba(138, 43, 226, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 45px 60px;
+    text-align: center;
+  }
+
+  .course-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+    background: linear-gradient(90deg, #00eaff, #c084fc, #00eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(0, 230, 255, 0.35);
+  }
+
+  .module-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #a5d8ff;
+    margin: 0 0 30px;
+    text-shadow: 0 0 15px rgba(165, 216, 255, 0.5);
+  }
+
+  .author {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 1.15rem;
+    color: #b0b0ff;
+    font-weight: 500;
+    opacity: 0.92;
+  }
+
+  .module-icon {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    width: 110px;
+    height: 110px;
+    opacity: 0.9;
+  }
+
+  .terminal {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    margin: 35px auto 20px;
+    max-width: 720px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.65);
+  }
+
+  .terminal-header {
+    background: #161b22;
+    padding: 10px 16px;
+    font-size: 0.92rem;
+    color: #8b949e;
+    text-align: left;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .terminal-content {
+    padding: 20px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #c9d1d9;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .prompt { color: #58a6ff; margin-right: 6px; }
+
+  body { background: #1F1F1F;}
+</style>
+
+</head>
+</body>
+
+<div class="module-banner">
+  <div class="circuit-overlay"></div>
+  
+  <!-- SVG distintivo para Funciones y Modularidad: bloques conectados con flechas de flujo -->
+<svg class="module-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="65" y="50" width="70" height="50" rx="8" fill="#1e3a8a" stroke="#00eaff" stroke-width="4"/>
+  <text x="100" y="82" fill="#fff" font-family="monospace" font-size="22" font-weight="bold" text-anchor="middle">def</text>
+  
+  <circle cx="30" cy="75" r="15" fill="#2d1b5e" stroke="#c084fc" stroke-width="3"/>
+  <text x="30" y="81" fill="#fff" font-size="18" text-anchor="middle">*</text>
+  <path d="M45 75 L60 75" stroke="#00eaff" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <circle cx="170" cy="75" r="15" fill="#2d1b5e" stroke="#a78bfa" stroke-width="3"/>
+  <text x="170" y="81" fill="#fff" font-size="16" text-anchor="middle">↩</text>
+  <path d="M135 75 L150 75" stroke="#00eaff" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <path d="M100 100 V150" stroke="#00eaff" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arrowhead)"/>
+  <rect x="75" y="150" width="50" height="20" rx="4" fill="#1e3a8a" stroke="#00eaff" stroke-width="2"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00eaff" />
+    </marker>
+  </defs>
+</svg>
+
+  <div class="content-wrapper">
+    <h1 class="course-title">Python desde Cero</h1>
+    <h2 class="module-name">Módulo 4 – Funciones y Modularidad</h2>
+    
+    <div class="author">Por: Hector Martinez</div>
+
+    <div class="terminal">
+      <div class="terminal-header">Python 3.12 – Código reutilizable</div>
+      <div class="terminal-content">
+        <span class="prompt">>>> </span>def calcular_area(radio, pi=3.1416):<br>
+        <span class="prompt">... </span>&nbsp;&nbsp;&nbsp;&nbsp;return pi * radio ** 2<br>
+        <span class="prompt">... </span><br>
+        <span class="prompt">>>> </span>print(calcular_area(5))<br>
+        78.54<br>
+        <span class="prompt">>>> </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
